@@ -19,6 +19,7 @@ int main()
 {
 	
 	int rankA = 0, rankU = 0, n = 0;
+	cout << "ECIMY Kurwa "; 
 	n = sprawdz_linie();
 	if (n != -1)
 	{
