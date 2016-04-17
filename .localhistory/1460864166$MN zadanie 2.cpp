@@ -17,7 +17,7 @@ void licz(int n, double **tablica, int *rankA, int *rankU);
 
 int main()
 {
-	hehe
+	
 	int rankA = 0, rankU = 0, n = 0;
 
 	n = sprawdz_linie();
