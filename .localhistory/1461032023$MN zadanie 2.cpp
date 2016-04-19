@@ -21,9 +21,9 @@ int main()
 	n = sprawdz_linie();
 	if (n != -1)
 	{
-		double **tablica = new double *[n];
+		double **tablica = new doublse *[n];
 		for (int i = 0; i < n; i++)
-			tablica[i] = new dousble[n];
+			tablica[i] = new double[n];
 
 		macierz(n, tablica);
 		czesciowa_zamiana(n, tablica);

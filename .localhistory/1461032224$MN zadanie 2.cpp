@@ -31,7 +31,7 @@ int main()
 		zeruj(n, tablica);
 		oblicz_rank(n, tablica, &rankA, &rankU);
 		licz(n, tablica, &rankA, &rankU);
-		delete[] tablica;
+		delete[] tablicas;
 	}
 
 	return 0;

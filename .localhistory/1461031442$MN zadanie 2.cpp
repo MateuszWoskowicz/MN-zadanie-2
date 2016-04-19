@@ -17,13 +17,14 @@ void licz(int n, double **tablica, int *rankA, int *rankU);
 
 int main()
 {
+	
 	int rankA = 0, rankU = 0, n = 0;
 	n = sprawdz_linie();
 	if (n != -1)
 	{
 		double **tablica = new double *[n];
 		for (int i = 0; i < n; i++)
-			tablica[i] = new dousble[n];
+			tablica[i] = new double[n];
 
 		macierz(n, tablica);
 		czesciowa_zamiana(n, tablica);
@@ -36,6 +37,9 @@ int main()
 
 	return 0;
 }
+
+
+
 
 int sprawdz_linie()
 {
@@ -206,3 +210,5 @@ void licz(int n, double **tablica, int *rankA, int *rankU)
 	else if ((*rankA == *rankU) && (*rankA < n)) cout << "UKLAD NIEOZNACZONY";
 	else if (*rankA != *rankU) cout << "UKLAD SPRZECZNY";
 }
+
+

@@ -17,13 +17,15 @@ void licz(int n, double **tablica, int *rankA, int *rankU);
 
 int main()
 {
+	
 	int rankA = 0, rankU = 0, n = 0;
+	cout << "ECIMY Kurwa "; 
 	n = sprawdz_linie();
 	if (n != -1)
 	{
 		double **tablica = new double *[n];
 		for (int i = 0; i < n; i++)
-			tablica[i] = new dousble[n];
+			tablica[i] = new double[n];
 
 		macierz(n, tablica);
 		czesciowa_zamiana(n, tablica);
@@ -31,11 +33,13 @@ int main()
 		zeruj(n, tablica);
 		oblicz_rank(n, tablica, &rankA, &rankU);
 		licz(n, tablica, &rankA, &rankU);
-		delete[] tablica;
 	}
 
 	return 0;
 }
+
+
+
 
 int sprawdz_linie()
 {
