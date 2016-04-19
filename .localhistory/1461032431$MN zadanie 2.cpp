@@ -23,7 +23,7 @@ int main()
 	{
 		double **tablica = new double *[n];
 		for (int i = 0; i < n; i++)
-			tablica[i] = new double[n];
+			tablica[i] = new dousble[n];
 
 		macierz(n, tablica);
 		czesciowa_zamiana(n, tablica);
